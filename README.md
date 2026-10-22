@@ -60,7 +60,7 @@ Mobile-first habit tracker: streaks, one-minute tasks, contribution heatmap and 
 | | |
 |---|---|
 | **Stack** | React 19, TypeScript, Vite 8, PWA |
-| **Live** | [dev-habit-tracker.vercel.app](https://dev-habit-tracker.vercel.app) |
+| **Live** | [dev-habit-tracker-lemon.vercel.app](https://dev-habit-tracker-lemon.vercel.app) |
 
 ### [Jewellery — Fine Jewellery, Indore](https://github.com/ap371-cloud/jewellery) — Zero-dependency storefront
 
