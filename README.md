@@ -1,111 +1,131 @@
 # Aryan Pandey
 
-**B.Tech — Artificial Intelligence & Machine Learning** · Backend & AI/ML engineering · Secure, offline-capable systems.
+**AI/ML Engineer | Backend Systems | Applied Security**
 
-I build working systems rather than tutorial clones — a post-quantum document distribution platform with blind forensic watermarking, a hardened offline-first study app with an encrypted local vault, a habit-tracker PWA, and a zero-dependency static storefront.
+[![GitHub](https://img.shields.io/badge/GitHub-ap371--cloud-181717?style=for-the-badge&logo=github)](https://github.com/ap371-cloud)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/aryan-pandey-71563a295)
+[![Email](https://img.shields.io/badge/Email-apandey71563%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:apandey71563@gmail.com)
+[![Location](https://img.shields.io/badge/Indore%2C%20India-4A90E2?style=for-the-badge&logo=google-maps&logoColor=white)](https://maps.google.com/?q=Indore,India)
 
-<p align="center">
-  <a href="https://github.com/ap371-cloud"><img src="https://img.shields.io/badge/GitHub-ap371--cloud-181717?style=flat&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://github.com/ap371-cloud?tab=repositories"><img src="https://img.shields.io/badge/Repositories-4_Public-2_Private-181717?style=flat&logo=git&logoColor=white" alt="Repositories"/></a>
-  <img src="https://img.shields.io/badge/Location-Indore%2C%20India-181717?style=flat&logo=googlemaps&logoColor=white" alt="Location"/>
-  <img src="https://img.shields.io/badge/Focus-AI%2FML%20%2B%20Backend%20%2B%20Security-0F7C59?style=flat&logo=shield&logoColor=white" alt="Focus"/>
-</p>
+> Building secure, offline-capable systems with a focus on cryptography, forensics, and practical AI/ML applications.
+
+## About Me
+
+I build end-to-end systems — from cryptographic primitives and backend APIs to polished frontends. I prefer working on problems where correctness matters: post-quantum cryptography, forensic attribution, zero-trust access control, and offline-first architectures.
+
+- 🎓 **Education:** B.Tech in Artificial Intelligence & Machine Learning
+- 🔐 **Interests:** Applied Cryptography, Post-Quantum Security, Digital Forensics, System Design
+- 💻 **Philosophy:** Write the README before the demo. Ship working prototypes, document limitations honestly.
+- 🛠️ **Currently:** Exploring Robotics AI, ROS 2, Computer Vision, and Distributed Systems
 
 ## GitHub Stats
 
 <p align="center">
-  <a href="https://github.com/ap371-cloud"><img src="https://github-readme-stats.vercel.app/api?username=ap371-cloud&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true" alt="Aryan Pandey GitHub stats" height="165"/></a>
-  <a href="https://github.com/ap371-cloud?tab=repositories&sort=language"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ap371-cloud&layout=compact&theme=default&hide_border=true" alt="Top languages" height="165"/></a>
+  <img src="https://github-readme-stats.vercel.app/api?username=ap371-cloud&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ap371-cloud&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="170"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ap371-cloud"><img src="https://github-readme-streak-stats.herokuapp.com?user=ap371-cloud&theme=default&hide_border=true" alt="GitHub streak" height="165"/></a>
-  <a href="https://github.com/ap371-cloud"><img src="https://github-readme-activity-graph.vercel.app/graph?username=ap371-cloud&theme=default&hide_border=true&area=true" alt="Contribution activity graph" height="165"/></a>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ap371-cloud&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
-
-## About
-
-- **Currently:** B.Tech in Artificial Intelligence & Machine Learning, building backend and applied-AI systems.
-- **Focus areas:** backend APIs, AI/ML application work, applied security (cryptography, access control, forensic attribution).
-- **Working style:** end-to-end — schema, service layer, API, UI, tests, CI — and honest about what a prototype can and cannot enforce.
-- **Beyond code:** DSA in C++, Linux CLI fluency, and a habit of writing the README before the demo.
 
 ## Featured Projects
 
-### [Sentinel](https://github.com/ap371-cloud/sentinel) — Offline PQC document distribution & leak forensics
-
-Encrypted multi-recipient document distribution where **every decryption produces a unique, invisible forensic watermark**, cryptographically bound to that session and signed by the recipient's own key.
-
-| | |
-|---|---|
-| **Stack** | FastAPI, SQLAlchemy 2, Postgres/SQLite, `pqcrypto` (ML-KEM-768, ML-DSA-65), AES-256-GCM, PyMuPDF, React 18 + TypeScript + Vite |
-| **Key ideas** | Blind watermark extraction (keyed correlation), 3-node offline permissioned ledger with RFC-6962 Merkle proofs and quorum certs, tamper-evident hash-chained audit trail, RBAC + ABAC + need-to-know + clearance, zero-trust re-evaluation per request, device binding, single-use nonces, two-person control, break-glass, session-scoped decryption, offline grant leases, policy versioning with digests, explainable access decisions, rule-based risk scoring, forensic evidence reports |
-| **Engineering** | 308 pytest cases with no mocks of the properties under test, plus end-to-end demo and API smoke scripts |
-| **Live** | [sentinel-ap-b58a.vercel.app](https://sentinel-ap-b58a.vercel.app) |
-
-### [Aarambh — The System](https://github.com/ap371-cloud/aarambh-web) — Gamified JEE study app
-
-Solo-Leveling-style progression for JEE Main & Advanced: XP, levels, ranks, attribute points, daily quests, subject gates and timed practice — with **all progress encrypted locally**.
-
-| | |
-|---|---|
-| **Stack** | React 19, TypeScript 5.7, Vite 8, Tailwind CSS v4, WebCrypto (AES-256-GCM + PBKDF2-SHA256), React Router 7 |
-| **Hardening** | Strict CSP with `require-trusted-types-for 'script'`, 11 hardened security headers with a CI drift check, `.npmrc` with `ignore-scripts=true`, self-hosted fonts, zero third-party runtime scripts |
-| **CI** | GitHub Actions — `npm audit --audit-level=high`, typecheck, lint, header drift check, vault round-trip test, build |
-
-### [Dev Habit Tracker](https://github.com/ap371-cloud/dev-habit-tracker) — Offline-first habit PWA
-
-Mobile-first habit tracker: streaks, one-minute tasks, contribution heatmap and progress analytics that work with no network.
-
-| | |
-|---|---|
-| **Stack** | React 19, TypeScript, Vite 8, PWA |
-| **Live** | [dev-habit-tracker-lemon.vercel.app](https://dev-habit-tracker-lemon.vercel.app) |
-
-### [Jewellery — Fine Jewellery, Indore](https://github.com/ap371-cloud/jewellery) — Zero-dependency storefront
-
-Static marketing and lead-generation site for a jewellery showroom: no build step, no framework, no runtime dependencies, no CDN calls — opens straight from `file://`.
-
-| | |
-|---|---|
-| **Stack** | HTML5, CSS3, vanilla ES2015, procedurally generated artwork (Pillow + NumPy), PWA manifest |
-| **Details** | BIS hallmarking disclosure, DPDP Act 2023 privacy policy, sitemap + robots + JSON-LD local business schema, `prefers-reduced-motion` respected |
+<table>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/ap371-cloud/sentinel">🔐 Sentinel</a></h3>
+      <p><strong>Post-Quantum Document Distribution & Leak Forensics</strong></p>
+      <p>Multi-recipient encrypted document distribution with session-scoped forensic watermarking. Every decryption produces a unique, traceable watermark bound to the recipient and session.</p>
+      <p>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/ML--KEM%20%7C%20ML--DSA-blueviolet?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+      <p><a href="https://sentinel-ap-b58a.vercel.app">🚀 Live Demo</a> • <a href="https://github.com/ap371-cloud/sentinel">📂 Repo</a></p>
+    </td>
+    <td width="50%">
+      <h3><a href="https://github.com/ap371-cloud/aarambh-web">🎮 Aarambh - The System</a></h3>
+      <p><strong>Gamified JEE Preparation Platform</strong></p>
+      <p>Solo-Leveling inspired study app with XP, quests, ranks, and encrypted local progress. Built with security-first approach using WebCrypto and strict CSP.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Tailwind%20v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+        <img src="https://img.shields.io/badge/WebCrypto-FF6B6B?style=flat-square"/>
+      </p>
+      <p><a href="https://github.com/ap371-cloud/aarambh-web">📂 Repo</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/ap371-cloud/dev-habit-tracker">✅ Dev Habit Tracker</a></h3>
+      <p><strong>Offline-First Habit PWA</strong></p>
+      <p>Track daily habits with streaks, 60-second focus timers, 16-week heatmap, and 7/30-day analytics. Works completely offline with localStorage.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
+      </p>
+      <p><a href="https://dev-habit-tracker-lemon.vercel.app">🚀 Live Demo</a> • <a href="https://github.com/ap371-cloud/dev-habit-tracker">📂 Repo</a></p>
+    </td>
+    <td width="50%">
+      <h3><a href="https://github.com/ap371-cloud/jewellery">💎 Jewellery Storefront</a></h3>
+      <p><strong>Zero-Dependency Static Site</strong></p>
+      <p>Fast, accessible jewellery showroom website with procedural artwork, PWA support, SEO optimization, and full legal compliance pages.</p>
+      <p>
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Vanilla%20JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/>
+      </p>
+      <p><a href="https://github.com/ap371-cloud/jewellery">📂 Repo</a></p>
+    </td>
+  </tr>
+</table>
 
 ## Tech Stack
 
-**Languages** — Python · TypeScript · JavaScript · C++ · SQL · HTML5 · CSS3
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-**Backend** — FastAPI · SQLAlchemy 2 · Pydantic · Uvicorn · SQLite · PostgreSQL
+### Backend & Frameworks
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-**Frontend** — React 18/19 · Vite · TypeScript · Tailwind CSS v4 · Zustand · React Router
+### Security & Cryptography
+![Cryptography](https://img.shields.io/badge/Cryptography-8B0000?style=for-the-badge&logo=letsencrypt&logoColor=white)
+![Post-Quantum](https://img.shields.io/badge/Post--Quantum%20Crypto-4B0082?style=for-the-badge)
+![WebCrypto](https://img.shields.io/badge/WebCrypto%20API-FF6B6B?style=for-the-badge)
 
-**Security & Crypto** — `pqcrypto` (ML-KEM-768, ML-DSA-65) · `cryptography` (AES-256-GCM, HKDF, scrypt) · WebCrypto · HMAC / DCT spread-spectrum watermarking · Merkle trees · hash-chained audit logs · RBAC + ABAC · CSP + Trusted Types
+### Tools & Infrastructure
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-**Infrastructure** — GitHub Actions · Vercel · Netlify · GitHub Pages · pytest · Vitest · ESLint · Dependabot
+## Activity Graph
 
-## Currently Exploring
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ap371-cloud&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" width="100%"/>
+</p>
 
-- Robotics AI and ROS 2 simulation
-- Computer vision and applied deep learning
-- Distributed and offline-first system design
-- Stronger problem-solving fundamentals (DSA, C++)
+## Connect With Me
 
-## GitHub Activity
+- **GitHub:** [@ap371-cloud](https://github.com/ap371-cloud)
+- **LinkedIn:** [Aryan Pandey](https://www.linkedin.com/in/aryan-pandey-71563a295)
+- **Email:** [apandey71563@gmail.com](mailto:apandey71563@gmail.com)
 
-<details>
-<summary><b>Contribution graph</b></summary>
+---
 
-![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ap371-cloud&theme=default&hide_border=true&area=true&custom_title=Contributions)
-
-</details>
-
-## Contact
-
-- **GitHub** — [@ap371-cloud](https://github.com/ap371-cloud)
-- **Email** — `apandey71563@gmail.com`
-- **LinkedIn** — <sub>_add your profile URL here_</sub>
-- **Website / Portfolio** — <sub>_add your portfolio URL here_</sub>
-
-## Open Source
-
-Issues and pull requests are welcome on the public repositories. For anything security-sensitive, please use the private channel rather than a public issue.
+<p align="center">
+  <i>Open to opportunities in Backend Engineering, AI/ML, and Security-focused roles.</i>
+</p>
